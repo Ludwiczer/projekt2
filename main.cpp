@@ -104,7 +104,7 @@ int main() {
                 std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
                 std::cout << "Niepoprawna liczba. Podaj wierzchołek od 0 do " << (graphs[i].size() - 1) << ": ";
             }
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // ← KLUCZOWA LINIJKA
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         } else {
             start_vertices[i] = 0;
         }
