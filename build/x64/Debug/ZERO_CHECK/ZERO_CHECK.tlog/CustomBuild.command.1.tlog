@@ -1,0 +1,10 @@
+^C:\USERS\USER\DOCUMENTS\GITHUB\PROJEKT2\BUILD\CMAKEFILES\19AA7E2B57D2AD00C61AA1507D7FFE4A\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/user/Documents/GitHub/projekt2 -BC:/Users/user/Documents/GitHub/projekt2/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/user/Documents/GitHub/projekt2/build/BFSProject.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
